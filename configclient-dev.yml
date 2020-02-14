@@ -1,2 +1,2 @@
 application:
-  message: "Message From {ENV} Local Git Repository"
+  message: "Message From 'DEV' Local Git Repository"
