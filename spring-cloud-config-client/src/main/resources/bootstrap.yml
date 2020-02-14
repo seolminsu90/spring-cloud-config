@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev
+  cloud:
+    config:
+      url: http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh"
+
+---
+
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: prod
+  cloud:
+    config:
+      url: http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh"

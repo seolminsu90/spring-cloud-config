@@ -1,0 +1,19 @@
+#server
+server:
+  port: 8888
+
+#cloud
+spring:
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/seolminsu90/spring-cloud-config.git
+
+#actuator
+management:
+  security:
+    enabled: false
+  endpoint:
+    env:
+      enabled: true
