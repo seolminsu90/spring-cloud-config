@@ -17,3 +17,8 @@ CURL -XGET configclient:8080/message
 >>
 {"message":"Message From {ENV} Local Git Repository"}
 ```
+
+### Git 상 config file이 변경되었을 경우
+```bash
+CURL -XPOST configclient:8080/actuator/refresh
+```
