@@ -18,7 +18,9 @@ CURL -XGET configclient:8080/message
 {"message":"Message From {ENV} Local Git Repository"}
 ```
 
-### Git 상 config file이 변경되었을 경우
+- Git 상 config file이 변경되었을 경우
 ```bash
 CURL -XPOST configclient:8080/actuator/refresh
 ```
+- 이미 주입된 값을 변경하기 위해서는 @RefreshScope 사용
+
