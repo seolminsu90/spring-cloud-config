@@ -24,6 +24,7 @@ CURL -XPOST configclient:8080/actuator/refresh
 ```
 - 이미 주입된 값을 변경하기 위해서는 @RefreshScope 사용
 
+-------------------------------------------------------------------
 
 # spring-cloud-eureka
 
