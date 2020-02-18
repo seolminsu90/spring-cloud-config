@@ -24,3 +24,17 @@ CURL -XPOST configclient:8080/actuator/refresh
 ```
 - 이미 주입된 값을 변경하기 위해서는 @RefreshScope 사용
 
+
+# spring-cloud-eureka
+
+## spring cloud eureka (server:8889)
+
+- spring cloud config server(8888)에서 config 주입받은 유레카 서버
+
+## spring cloud eureka client (client:8070)
+
+- eureka client tester
+
+## spring cloud eureka client1,2 (client:8060,8050)
+
+- eureka client tester -> cleint1,2 loadbalence test
