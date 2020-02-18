@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: eureka
+    profiles:
+        active: client1
+    cloud:
+        config:
+            uri: http://localhost:8888
+server:
+    port: 8070
